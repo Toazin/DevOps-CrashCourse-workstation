@@ -20,3 +20,7 @@ end
 describe package('tree') do
  it { should be_installed }
 end
+
+describe file('/etc/motd') do
+ it { should be_file }
+end
